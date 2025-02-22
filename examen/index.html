@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farmacia cruz azul</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Pantalla de Login -->
+        <div class="card">
+            <h2 class="title">Farmacia cruz azul</h2>
+            <div class="form-group">
+                <label>Usuario</label>
+                <input type="text" placeholder="Ingrese su usuario">
+            </div>
+            <div class="form-group">
+                <label>Contraseña</label>
+                <input type="password" placeholder="Ingrese su contraseña">
+            </div>
+            <button class="btn blue">Iniciar Sesión</button>
+        </div>
+
+        <!-- Pantalla Nueva Venta -->
+        <div class="card">
+            <h2 class="title">Nueva Venta</h2>
+            <div class="venta-header">
+                <span>Venta #2024-0123</span>
+            </div>
+            <div class="venta-body">
+                <input type="text" placeholder="Buscar producto...">
+                <button class="btn blue">🔍</button>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Producto</th>
+                        <th>Cantidad</th>
+                        <th>Precio</th>
+                        <th>Subtotal</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Paracetamol 500mg</td>
+                        <td>2</td>
+                        <td>$5.99</td>
+                        <td>$11.98</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="resumen">
+                <p>Subtotal: $11.98</p>
+                <p>IVA: $1.44</p>
+                <p><strong>Total: $13.42</strong></p>
+            </div>
+            <button class="btn green">Finalizar Venta</button>
+        </div>
+
+        <!-- Gestión de Recetas -->
+        <div class="card">
+            <h2 class="title">Gestión de Recetas</h2>
+            <input type="text" placeholder="Buscar receta por ID o paciente...">
+            <button class="btn blue">Buscar</button>
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID Receta</th>
+                        <th>Paciente</th>
+                        <th>Médico</th>
+                        <th>Fecha</th>
+                        <th>Estado</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>REC-2024-0456</td>
+                        <td>José Si</td>
+                        <td>Dr. Sulay</td>
+                        <td>22/02/2024</td>
+                        <td class="status green">Dispensada</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Control de Inventario -->
+        <div class="card">
+            <h2 class="title">Control de Inventario</h2>
+            <div class="inventario-header">
+                <button class="btn blue">Nuevo Producto</button>
+                <span class="alert">⚠️ 3 productos con stock bajo</span>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Código</th>
+                        <th>Producto</th>
+                        <th>Stock</th>
+                        <th>Precio</th>
+                        <th>Vencimiento</th>
+                        <th>Estado</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>MED-001</td>
+                        <td>Paracetamol 500mg</td>
+                        <td>150</td>
+                        <td>$5.99</td>
+                        <td>12/2024</td>
+                        <td class="status green">En stock</td>
+                    </tr>
+                    <tr>
+                        <td>MED-002</td>
+                        <td>Amoxicilina 250mg</td>
+                        <td>45</td>
+                        <td>$12.99</td>
+                        <td>10/2024</td>
+                        <td class="status yellow">Stock bajo</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
